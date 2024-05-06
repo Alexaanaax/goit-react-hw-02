@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Description from "./components/Description";
 import Options from "./components/Options";
 import Feedback from "./components/Feedback";
-
+import Notification from "./components/Notification";
 import reviews from "./reviews.json";
 
 const App = () => {
@@ -53,7 +53,7 @@ const App = () => {
           feedback={feedback}
         />
       ) : (
-        <Description message={"No feedback yet"} />
+        <Notification message={"No feedback yet"} />
       )}
     </div>
   );

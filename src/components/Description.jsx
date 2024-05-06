@@ -1,11 +1,10 @@
 import css from "./Description.module.css";
 
-const Description = ({ name, descr, message }) => {
+const Description = ({ name, descr }) => {
   return (
     <>
       <h1>{name}</h1>
       <p>{descr}</p>
-      <p>{message}</p>
     </>
   );
 };
